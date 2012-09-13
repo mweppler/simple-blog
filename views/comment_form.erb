@@ -1,0 +1,15 @@
+<h2>Leave a comment</h2>
+<form action="/post/comment/create" method="post">
+  <input type="hidden" value="<%= post_id %>" name="comment[post_id]" id="comment_post_id" />
+  <p>
+    <label for="comment_name">Name: </label>
+    <input type="text" value="" name="comment[name]" id="comment_name" />
+  </p>
+  <p>
+    <label for="comment_comment">Comment: </label>
+    <textarea rows="10" cols="40" name="comment[comment]" id="comment_comment"></textarea>
+  </p>
+  <p>
+    <input type="submit" value="Create" />
+  </p>
+</form>
